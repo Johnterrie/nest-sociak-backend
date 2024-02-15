@@ -1,4 +1,12 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Post } from '@nestjs/common';
+
 
 @Controller('admin')
-export class AdminController {}
+export class AdminController {
+    @Post("login")
+    findAll(): string {
+        return "we are coming"
+    }
+
+
+}
