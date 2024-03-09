@@ -4,17 +4,16 @@ import { AdminDto } from './dto/admin.dto';
 @Injectable()
 export class AdminService {
 
-   adminLogin(emailUname, password) {
+    adminLogin(adminService: AdminDto) {
+        const {email, password} = adminService
+        if (!email) {
+            return "wrong wrong email admin logins"
+        }
+        if (!password) {
+            return "wrong wrong password admin logins"
+        }
 
-    if(!emailUname) {
-        return "wrong wrong email admin logins"
+
     }
-
-    if (!password) {
-        return "wrong wrong password admin logins"
-
-    }
-
-   }
 
 }

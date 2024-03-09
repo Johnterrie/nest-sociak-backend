@@ -17,7 +17,7 @@ import { ProjectService } from './project/project.service';
 
 
 @Module({
-  imports: [UsersModule, AdminModule, AppUpdateModule, AuthModule, ChatModule, HashtagModule, LocationInfoModule, NotificationModule, PostModule, ProjectModule, MongooseModule.forRoot()],
+  imports: [UsersModule, AdminModule, AppUpdateModule, AuthModule, ChatModule, HashtagModule, LocationInfoModule, NotificationModule, PostModule, ProjectModule],
   controllers: [AppController],
   providers: [AppService, ProjectService],
 })
